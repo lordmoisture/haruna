@@ -1,0 +1,1072 @@
+﻿@charset "UTF-8";
+/* ======================
+基本文字
+====================== */
+html > * {
+  font-size: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  html > * {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html > * {
+    font-size: 15px;
+  }
+}
+
+body {
+  /*color: #fff;*/
+  /* 基本文字色 */
+  line-height: 1.6;
+  background: url(../img/bg_texture.png) repeat 0 0;
+}
+
+body.setting_bg {
+  /* background: initial; */
+}
+
+.background {
+  /*color: #fff;*/
+}
+
+.background_inverse {
+  /*color: #fff;*/
+  /* 反転文字色 */
+}
+
+.background_inverse a {
+  color: white;
+}
+
+a {
+  text-decoration: underline;
+}
+
+/* =====================
+見出しデザイン
+====================== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #eee;
+  text-shadow: 1px 1px 0 #777 , -1px -1px 0 #777, 1px -1px 0 #777 , -1px 1px 0 #777;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit !important;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  text-shadow: none;
+}
+
+.alert h1, .alert h2, .alert h3, .alert h4, .alert h5, .alert h6 {
+  text-shadow: none;
+}
+
+h1 {
+  font-size: 150%;
+}
+
+h2 {
+  font-size: 140%;
+}
+
+h3 {
+  font-size: 110%;
+}
+
+h4 {
+  font-size: 105%;
+}
+
+.main-page-header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.main-page-header h2 {
+  padding: 10px 5px;
+  margin-bottom: 20px;
+  text-shadow: none;
+  background: rgba(250, 111, 201, 0.8);
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#cc000000,EndColorStr=#cc000000);
+  /*IE8以下用*/
+}
+
+section h2 {
+  border: 0;
+  padding: 0px 0px 5px;
+  font-size: 140%;
+  text-shadow: none;
+}
+
+.label {
+  color: #777;
+}
+
+.label[class*="label-"] {
+  color: #fff;
+}
+
+.panel-group .panel {
+  background: rgba(0, 0, 0, 0.6);
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#99000000,EndColorStr=#99000000);
+}
+
+.panel-group .panel-default > .panel-heading {
+  color: inherit !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#66000000,EndColorStr=#66000000);
+}
+
+/* ======================
+ヘッダー
+====================== */
+#header {
+  margin: 0 auto;
+  font-size: 85%;
+  /* logo */
+  /* logoあるときのメインテキスト */
+  /* logoがないとき x 電話あり */
+  /* header画像有の時 */
+  /* eye_catch */
+}
+
+#header a {
+  text-decoration: none;
+}
+
+#header h1 {
+  font-size: 120%;
+  margin: 0;
+  padding: 3px;
+}
+
+#header h1 span {
+  font-size: 70%;
+}
+
+#header .background_inverse .container {
+  padding-bottom: 5px;
+}
+
+#header .background_inverse {
+  min-height: 10px;
+}
+
+#header .header_img_discription {
+  font-size: 80%;
+  display: block;
+  line-height: 1.4;
+  padding: 3px;
+}
+
+#header .carousel {
+  padding: 0;
+}
+
+#header .page-title {
+  float: left;
+  width: 62%;
+  padding: 1%;
+}
+
+#header .page-title h1 {
+  font-size: 180%;
+  padding: 0;
+}
+
+#header .logo-area {
+  margin: 10px 0;
+  max-width: 26%;
+  float: left;
+  text-align: center;
+}
+
+#header .logo-area .header-logo {
+  max-width: 100%;
+  width: auto;
+}
+
+#header .logo-text {
+  width: 36%;
+  margin-top: 2%;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1%;
+}
+
+#header .shop-tel {
+  white-space: nowrap;
+  width: 100%;
+  margin-top: 2.5%;
+  padding-bottom: 2%;
+  float: right;
+  letter-spacing: -0.5px;
+  line-height: 1;
+  text-align: center;
+}
+
+#header .shop-tel .shop-tel-text {
+  font-size: 500%;
+  display: inline-block;
+}
+
+@media (max-width: 1199px) {
+  #header .shop-tel .shop-tel-text {
+    font-size: 360%;
+  }
+}
+
+#header .shop-tel .glyphicon {
+  font-size: 200%;
+  color: #ccc;
+}
+
+#header .shop-tel.with-headerimg {
+  width: 100%;
+}
+
+#header .shop-tel.with-headerimg .glyphicon {
+  font-size: 150%;
+}
+
+#header .shop-tel.with-headerimg .shop-tel-text {
+  font-size: 230%;
+}
+
+#header .shop-tel.with-headerimg div {
+  font-size: 10px;
+}
+
+@media (max-width: 767px) {
+  #header.sp-menu-collapse .shop-tel.with-headerimg {
+    width: 112%;
+    width: calc(100% + 65px);
+    margin: 0;
+  }
+  #header.sp-menu-collapse .shop-tel.with-headerimg .shop-tel-text {
+    font-size: 200% !important;
+  }
+  #header.sp-menu-collapse .shop-tel.with-headerimg .glyphicon {
+    font-size: 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #header .shop-tel.with-headerimg {
+    margin: 0;
+    padding: 0;
+  }
+  #header .shop-tel.with-headerimg .shop-tel-text {
+    font-size: 200% !important;
+  }
+  #header .shop-tel.with-headerimg .glyphicon {
+    font-size: 100% !important;
+  }
+}
+
+#header .eyecatch {
+  width: 100%;
+  padding: 1%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 1%;
+  border-top: solid 1px #777;
+}
+
+@media (max-width: 767px) {
+  #header {
+    /* logoがないとき x アイキャッチあり */
+  }
+  #header .page-title h1 {
+    display: inline-block;
+    font-size: 110%;
+  }
+  #header .mainvisual p {
+    display: inline;
+    margin-left: 5px;
+  }
+  #header.sp-menu-collapse .background_inverse {
+    padding-right: 65px;
+    min-height: 15px;
+  }
+  #header.sp-menu-collapse .page-title {
+    padding-right: 65px;
+  }
+  #header .logo-area {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  #header .logo-area .header-logo {
+    margin: 0;
+    max-width: 60%;
+    width: auto;
+  }
+  #header .logo-text {
+    width: 100%;
+    margin-top: 3%;
+    float: none;
+  }
+  #header .logo-text.with-shop-tel {
+    width: 100%;
+    margin-top: 3%;
+    float: none;
+  }
+  #header .shop-tel {
+    width: 100%;
+    float: none;
+    margin: 6% 0 3%;
+    text-align: center;
+  }
+  #header .shop-tel .glyphicon {
+    font-size: 220% !important;
+  }
+  #header .shop-tel .shop-tel-text {
+    font-size: 350% !important;
+  }
+  #header .with-shop-tel {
+    width: 100%;
+    float: none;
+    padding: 0% 1%;
+    margin-top: 3%;
+  }
+  #header .eyecatch {
+    width: 100%;
+    margin-top: 0%;
+    float: none;
+    clear: both;
+  }
+}
+
+@media (max-width: 330px) {
+  #header .shop-tel .shop-tel-text {
+    font-size: 380% !important;
+  }
+}
+
+.mainvisual {
+  margin: 0 auto;
+}
+
+.mainvisual h1 {
+  font-size: 200%;
+}
+
+.mainvisual p {
+  font-size: 100%;
+}
+
+.mainvisual img {
+  width: 100%;
+}
+
+.mainvisual_container {
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .mainvisual_container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .mainvisual_container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mainvisual_container {
+    width: 1170px;
+  }
+}
+
+.mainvisual_full {
+  width: 100%;
+  padding: 0 15px;
+}
+
+/* ======================
+　フッター
+====================== */
+.footer-credits {
+  padding: 5px;
+  text-align: center;
+}
+
+#footer .background {
+  padding: 20px 5px 0;
+}
+
+#footer .img-thumbnail {
+  padding: 0;
+  background: transparent;
+}
+
+#footer h4.footer-title span {
+  font-size: 80%;
+}
+
+#footer .footer-tel-wrap {
+  padding-top: 1%;
+  text-align: center;
+}
+
+#footer .footer-tel-wrap.with-footer-logo {
+  padding-top: 6%;
+}
+
+@media (max-width: 767px) {
+  #footer .footer-tel-wrap {
+    padding-top: 0 !important;
+    padding: 1% 0 5% !important;
+  }
+}
+
+#footer .footer-tel {
+  line-height: 1;
+}
+
+#footer .footer-tel .shop-tel-text {
+  font-size: 432%;
+}
+
+#footer .footer-tel .glyphicon {
+  font-size: 250%;
+  color: #ccc;
+}
+
+@media (max-width: 450px) {
+  #footer .footer-tel .glyphicon {
+    font-size: 200%;
+  }
+  #footer .footer-tel .shop-tel-text {
+    font-size: 310%;
+  }
+}
+
+#footer .sitemap {
+  padding: 10px 0;
+  margin: 20px 0 0;
+  overflow: hidden;
+  text-align: center;
+  border-top: solid 1px #ccc;
+}
+
+#footer .sitemap li {
+  display: inline-block;
+}
+
+#footer .sitemap li:first-child:before {
+  content: "|";
+  color: #777;
+}
+
+#footer .sitemap li:after {
+  content: "|";
+  color: #777;
+}
+
+#footer .sitemap li a {
+  padding: 2px 4px;
+  display: inline-block;
+}
+
+/* ======================
+　透過背景
+====================== */
+.background-padding01 {
+  padding: 15px 12px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .background-padding01 {
+    padding: 20px 30px;
+  }
+}
+
+.thumbnail, .well, .img-thumbnail {
+  background: rgba(245, 100, 197, 0.4);
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#99000000,EndColorStr=#99000000);
+  /*IE8以下用*/
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+/* ====================== */
+main {
+  padding: 0 0 20px;
+}
+
+/* パンくず */
+.breadcrumb {
+  margin-top: 10px;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  font-size: 12px;
+  background: rgba(250, 111, 201, 0.8);
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#cc000000,EndColorStr=#cc000000);
+  /*IE8以下用*/
+}
+
+.breadcrumb li {
+  float: left;
+  margin: 0;
+  position: relative;
+  padding-right: 1em;
+  padding-left: 1em;
+  max-width: 30%;
+  margin-left: -5px;
+}
+
+.breadcrumb li.active {
+  font-weight: bold;
+  background: none;
+  padding: .7em 0 .7em .5em;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: initial;
+  max-width: auto;
+}
+
+.breadcrumb li.active:before, .breadcrumb li.active:after {
+  border: 0;
+}
+
+.breadcrumb li + li:before {
+  content: "";
+  padding: 0;
+}
+
+.breadcrumb li:first-child {
+  margin: 0;
+  padding-left: 0;
+}
+
+.breadcrumb li:first-child:before {
+  content: "";
+  border: none;
+}
+
+.breadcrumb li:first-child.active {
+  padding-left: .5em;
+}
+
+.breadcrumb li:first-child a {
+  padding: .7em 0em .7em .5em;
+}
+
+.breadcrumb li:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -1.5em;
+  border-width: 1.5em 0 1.5em 1em;
+  border-style: solid;
+  border-color: #FFF #FFF #FFF transparent;
+  left: 0;
+}
+
+.breadcrumb li:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -1.5em;
+  border-top: 1.5em solid transparent;
+  border-bottom: 1.5em solid transparent;
+  border-left: 1em solid #FFF;
+  right: 0;
+}
+
+.breadcrumb li a {
+  width: 100%;
+  background: #FFF;
+  padding: .7em 0em .7em .2em;
+  float: left;
+  text-decoration: none;
+  color: #db46a6;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* 追加されるブロック */
+.additional_block {
+  padding: 10px 0 !important;
+  text-align: center;
+}
+
+.additional_block * {
+  margin: auto;
+}
+
+/* メイン画像があるとき */
+.top-image {
+  text-align: center;
+}
+
+/* グローバルナビ */
+.navbar {
+  min-height: initial;
+  min-height: auto;
+  height: auto;
+  margin-bottom: 0;
+  border: none;
+}
+
+.navbar.background {
+  background: rgba(0, 0, 0, 0.4);
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#66002c85,EndColorStr=#66002c85);
+  /*IE8以下用*/
+}
+
+.navbar-inverse {
+  border: 0;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar .container h2 {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .navbar .container {
+    height: 100%;
+    background: #fa6fc9;
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#cc002c85,EndColorStr=#cc002c85);
+    /*IE8以下用*/
+  }
+  .navbar .container h2 {
+    display: block;
+    text-align: center;
+    padding: 10px 0px 10px;
+    margin: 2px -15px 1px;
+    border-bottom: solid 1px #ccc;
+    color: #fff;
+    background: #f154ba;
+    text-shadow: none;
+  }
+  .navbar .active a {
+    border-left: solid 5px #FFF;
+  }
+}
+
+.offcanvas-toggle {
+  position: fixed;
+  top: 10px;
+  right: 0;
+  z-index: 100;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  letter-spacing: -1px;
+  font-size: 9px;
+  margin: 5px 5px;
+}
+
+.offcanvas-toggle .icon-bar {
+  width: 34px;
+  margin-bottom: 3px;
+  height: 4px;
+  background: #FFF;
+}
+
+.navbar-nav > li > a {
+  padding-left: 10px;
+}
+
+.nav_select_wrap {
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  padding: 0;
+  margin: 20px 0 0;
+  background: #fff url(down_arrow.png) no-repeat 95% center;
+  background-size: 20px;
+  border: transparent;
+  color: #000;
+}
+
+.nav_select_wrap select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  appearance: none;
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: none transparent;
+  vertical-align: middle;
+  font-size: inherit;
+  color: inherit;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 100%;
+  padding: 7px 0 7px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.nav_select_wrap select::-ms-expand {
+  display: none;
+}
+
+.nav_select_wrap option {
+  color: #000;
+}
+
+/* 下層用ナビ */
+.subnav {
+  margin-top: -10px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  padding: 1%;
+}
+
+.subnav .nav-pills > li {
+  display: inline-block;
+  float: none;
+  margin: 2px 1px 2px;
+}
+
+.subnav .nav-pills > li a {
+  background: #fff;
+  border: solid 1px transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 20px;
+  color: #777;
+  position: relative;
+}
+
+.subnav .nav-pills > li a:hover {
+  background: #d5d5d5;
+}
+
+.subnav .nav-pills > li a:after {
+  content: url(../img/icon_navpills.png);
+  position: absolute;
+  top: 50%;
+  margin-top: -11px;
+  right: 5px;
+}
+
+.subnav .nav-pills > li.active > a {
+  background: #eee;
+  color: #777;
+  border: solid 1px #848484;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 15px;
+}
+
+.subnav .nav-pills > li.active > a:after {
+  content: "";
+}
+
+.nav-stacked {
+  border-radius: 3px;
+  padding: 4%;
+  background: rgba(0, 0, 0, 0.6);
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#99000000,EndColorStr=#99000000);
+  /*IE8以下用*/
+}
+
+.nav-stacked li {
+  margin-bottom: 5px;
+}
+
+.nav-stacked a {
+  /*background:lighten($brand-primary, 10%);*/
+  /*color:#fff;*/
+}
+
+.nav-stacked.active > a {
+  background: #777;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .nav-stacked {
+    padding: 1%;
+  }
+}
+
+/* フォーム */
+.form-horizontal {
+  padding: 20px 0;
+  word-break: break-all;
+}
+
+/* diary */
+.comments {
+  margin: auto 10px;
+}
+
+/* ======================
+　ページ上部へ
+===================== */
+#page-top {
+  display: none;
+  position: fixed;
+  right: 10px;
+  bottom: 0px;
+  max-width: 70px;
+  height: 85px;
+  z-index: 100;
+}
+
+@media (max-width: 767px) {
+  #page-top {
+    max-width: 50px;
+    height: 60px;
+  }
+}
+
+#page-top p {
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#move-page-top {
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+#move-page-top img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ======================
+　シャドウ・立体装飾付与
+====================== */
+.navbar {
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
+  border-bottom: #000 solid 1px;
+  border-top: #000 solid 1px;
+}
+
+.navbar .navbar-nav {
+  margin: 0px -15px;
+  border-left: #fff solid 1px;
+  margin-bottom: -1px;
+}
+
+.navbar .navbar-nav li {
+  margin-top: -1px;
+}
+
+.navbar .navbar-nav a {
+  border-right: #fff solid 1px;
+  color: inherit !important;
+  /* background: rgba(0, 0, 0, 0.4); */
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#66002c85,EndColorStr=#66002c85);
+  /*IE8以下用*/
+}
+
+.navbar .navbar-nav a:hover, .navbar .navbar-nav a:focus {
+  background: rgba(0, 0, 0, 0.8) !important;
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#cc002c85,EndColorStr=#cc002c85) !important;
+  /*IE8以下用*/
+}
+
+.navbar .navbar-nav .active a {
+  background: rgba(239, 77, 183, 0.8);
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#66002c85,EndColorStr=#66002c85);
+  /*IE8以下用*/
+}
+
+@media (max-width: 767px) {
+  .navbar .navbar-nav {
+    border-left: none;
+  }
+  .navbar .navbar-nav a {
+    border-right: none;
+  }
+}
+
+.btn, .nav-pills a, .pager a, .pager span {
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.nav-pills li.active a {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* ======================
+　カレンダー／表
+====================== */
+table.table th {
+  background: rgba(250, 176, 225, 0.8);
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#cc000000,EndColorStr=#cc000000);
+  /*IE8以下用*/
+  color: #fff;
+}
+
+table.table th.danger {
+  /* 日曜 */
+  background-color: #d9534f !important;
+}
+
+table.table th.success {
+  /* 土曜 */
+  background-color: #5bc0de !important;
+}
+
+table.table td {
+ background: rgba(250, 176, 225, 0.8);
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#99000000,EndColorStr=#99000000);
+  /*IE8以下用*/
+}
+
+/* ======================
+　SNS
+====================== */
+.social-bookmark {
+  background: rgba(0, 0, 0, 0.6);
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#99000000,EndColorStr=#99000000);
+  /*IE8以下用*/
+}
+
+/* =============
+装飾パーツ設定
+========= */
+.shop-tel-text {
+  font-family: 'Unna', serif;
+  color: #000;
+  font-weight: bold;
+}
+
+.shop-tel-text:hover, .shop-tel-text:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+.shop-tel-text span {
+  position: relative;
+  display: inline-block;
+  overflow: inherit;
+}
+
+.shop-tel-text span:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: attr(title);
+  color: #ccc;
+  -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), #f564c5 40%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0));
+}
+
+.shop-tel-text span:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: attr(title);
+  -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), #f564c5 40%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0));
+}
+
+.tel-shadow01 {
+  /* glow */
+}
+
+.tel-shadow01 .shop-tel-text span {
+  text-shadow: -1px -1px 0px #f564c5, 1px -1px 0px #f564c5, 1px 1px 0px #f564c5, -1px 1px 0px #f564c5, 0px 0px 25px rgba(250, 177, 226, 0.7), 0px 0px 20px rgba(250, 177, 226, 0.7);
+  color: white;
+}
+
+.tel-shadow01 .shop-tel-text span:before, .tel-shadow01 .shop-tel-text span:after {
+  padding: 20px;
+  margin: -20px;
+}
+
+.tel-shadow01 .shop-tel-text span:before {
+  text-shadow: none;
+}
+
+.tel-shadow02 {
+  /* shadow */
+}
+
+.tel-shadow02 .shop-tel-text span {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  text-transform: uppercase;
+  text-overflow: clip;
+  color: white;
+  text-shadow: 2px 2px 0 #777, 4px 4px 0 #777;
+}
+
+.tel-shadow03 {
+  /* 3D */
+}
+
+.tel-shadow03 .shop-tel-text span {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  text-overflow: clip;
+  color: white;
+  text-shadow: 0 1px 0 #dddddd, 0 2px 0 #c4c4c4, 0 3px 0 #aaaaaa, 0 4px 0 #919191, 0 5px 0 #777, 0 6px 1px rgba(0, 0, 0, 0.0980392), 0 0 5px rgba(0, 0, 0, 0.0980392), 0 1px 3px rgba(0, 0, 0, 0.298039), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.247059), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.14902);
+}
+
+.tel-shadow04 {
+  /* bordered */
+}
+
+.tel-shadow04 .shop-tel-text span {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  border: none;
+  text-overflow: clip;
+  color: white;
+  text-shadow: 1px 1px 0 #ccc, -1px -1px 0 #ccc, 1px -1px 0 #ccc, -1px 1px 0 #ccc, 2px 1px 0 #ccc, -2px -1px 0 #ccc, 2px -1px 0 #ccc, -2px 1px 0 #ccc;
+}
+
+.navbar-nav > li > a {
+  position: relative;
+}
+
+#main_wrap {
+  position: relative;
+  margin-top: 5px;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.btn, .nav-pills a, .pager a, .pager span {
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.nav-pills li.active a {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}

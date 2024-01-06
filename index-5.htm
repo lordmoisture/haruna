@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>台湾楽園</title>
+    <meta name="keywords" content="台湾楽園" />
+    <meta name="description" content="台湾楽園" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="referrer" content="unsafe-url" />
+    <link href="style/css?family=Unna" rel="stylesheet" />
+    <link href="style/bootstrap.css" rel="stylesheet" />
+    <link href="style/bootstrap.offcanvas.min.css" rel="stylesheet" />
+    <link href="style/common.css?update20210827" rel="stylesheet" />
+    <link href="style/style.css" rel="stylesheet" />
+
+    <style>
+      body {
+        background: url(static/image/bg_starry.gif);
+        background-repeat: repeat;
+        background-position: center top;
+        background-attachment: fixed;
+        width: 1160px;
+        margin: auto;
+      }
+
+      .background {
+        background: rgba(255, 255, 255, 0.5);
+        filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#7f000000, EndColorStr=#7f000000);
+        /*IE8以下用*/
+      }
+
+      .background_inverse {
+        background: rgba(255, 255, 255, 0.5);
+        filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#7f000000, EndColorStr=#7f000000);
+        /*IE8以下用*/
+      }
+
+      #header .page-title {
+        display: none;
+      }
+
+      .videoheader {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1170px;
+      }
+
+      .background_inverse {
+        display: none;
+      }
+      .htop {
+        background: rgba(255, 0, 144, 0.89);
+        width: 100%;
+        height: 77px;
+        line-height: 77px;
+        padding: 0 30px;
+        color: #fff;
+      }
+      .htopl {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        width: 30%;
+        float: left;
+      }
+      .htopr {
+        width: 70%;
+        float: right;
+      }
+      .htop2 {
+        background: #fa6fc9;
+        width: 100%;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+      }
+      .navbar-default {
+        display: none;
+      }
+      .htopr .navbar-nav {
+        float: right;
+        margin: 15px;
+      }
+      @media (max-width: 767px) {
+        body {
+          width: 100% !important;
+        }
+        .htop {
+          font-size: 16px;
+        }
+        .htopl {
+          width: 100%;
+        }
+        .htopr {
+          display: none;
+        }
+        .navbar-default {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body class="setting_bg frame_gold_01 frame_z_nocorner tel-shadow01">
+    <header id="header" class="sp-menu-collapse">
+      <div>
+        <div class="htop">
+          <div class="htopl">台湾楽園</div>
+          <div class="htopr">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="index.htm">トップページ</a>
+              </li>
+              <li>
+                <a href="index-1.htm?list_3/">スタッフ紹介</a>
+              </li>
+              <li>
+                <a href="index-2.htm?about_7/">店内風景</a>
+              </li>
+              <li>
+                <a href="index-3.htm?about_6/">サービスメニュー</a>
+              </li>
+              <li>
+                <a href="index-4.htm?about_8/">アクセス</a>
+              </li>
+              <li class="active">
+                <a href="index-5.htm?about_9/">求人情報</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="htop2">070-4430-9580　　営業：12:00-翌日3:00</div>
+      </div>
+      <div class="background deco_top">
+        <div class="mainvisual deco_bottom mainvisual_full">
+          <div class="row">
+            <div class="shop-tel">
+              <a class="shop-tel-text" href="tel:070-4430-9580">
+                <span>Tel:070-4430-9580</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="navbar-toggle offcanvas-toggle"
+        data-toggle="offcanvas"
+        data-target="#js-bootstrap-offcanvas"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </span>
+      </button>
+      <nav
+        class="navbar navbar-default navbar-offcanvas background deco_top deco_bottom"
+        role="navigation"
+        id="js-bootstrap-offcanvas"
+      >
+        <div class="container">
+          <h2>MENU</h2>
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="index.htm">トップページ</a>
+            </li>
+            <li>
+              <a href="index-1.htm?list_3/">スタッフ紹介</a>
+            </li>
+            <li>
+              <a href="index-2.htm?about_7/">店内風景</a>
+            </li>
+            <li>
+              <a href="index-3.htm?about_6/">サービスメニュー</a>
+            </li>
+            <li>
+              <a href="index-4.htm?about_8/">アクセス</a>
+            </li>
+            <li class="active">
+              <a href="index-5.htm?about_9/">求人情報</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <ol class="breadcrumb">
+          <li>
+            <a href="index.htm" title="Home">Home</a>
+          </li>
+          <li class="active">求人</li>
+        </ol>
+      </div>
+      <div class="container">
+        <div id="main_wrap" class="background">
+          <div class="main_deco_outer01 deco_top deco_bottom">
+            <div class="main_deco_outer02 deco_left deco_right">
+              <div class="main_deco_inner01">
+                <div class="main_deco_inner02">
+                  <main class="background-padding01">
+                    <!-- Start Page Title -->
+                    <div class="main-page-header">
+                      <h2>求人</h2>
+                    </div>
+                    <section>
+                      <br />
+                      <p>
+                        毎日接客できます♪<br /><br />経験を積んだ頼れる女性トレーナーがお仕事の流れや技術の指導を致します。<br />研修後も、いつでもご相談など出来るようにサポート体制を整えています。<br /><br />・制服貸与　・給与全額日払い　・ノルマ、罰金無し<br />・保証制度有り（勤務内容による）　・資格所得支援制度有り<br />・完全個室待機可　・各室エアコン完備<br /><br />アロマセラピスト・エステティシャン
+                        ※店内でのお仕事です。出張や派遣はありません。
+                        実務経験が有る方、資格をお持ちの方優遇いたします
+                      </p>
+                      <br /><br />
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <th>雇用形態</th>
+                            <td>日払い アルバイト</td>
+                          </tr>
+                          <tr>
+                            <th>給与</th>
+                            <td>日給制、指名料あり</td>
+                          </tr>
+                          <tr>
+                            <th>資格</th>
+                            <td>
+                              18〜35歳位までの女性<br />年齢的にギリギリかなという方もお気軽にご相談ください！<br />応募資格<br />経験者優遇・未経験者大歓迎♪
+                            </td>
+                          </tr>
+                          <tr>
+                            <th>勤務時間</th>
+                            <td>12:00-翌日3:00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </section>
+                  </main>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="visible-xs">
+          <div class="nav_select_wrap">
+            <select class="res-menu">
+              <option value="/">Home</option>
+              <option value="/?list_3/">- スタッフ紹介</option>
+              <option value="/?about_7/">- 店内風景</option>
+              <option value="/?about_6/">- サービスメニュー</option>
+              <option value="/?about_8/">- 地図</option>
+              <option value="/?about_9/" selected="">- 求人</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="page-top">
+      <p>
+        <a href="#" id="move-page-top">
+          <img src="style/totop_09.png" alt="" width="83" height="96" />
+        </a>
+      </p>
+    </div>
+    <footer id="footer" class="deco_top">
+      <div class="background">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h4 class="footer-title">
+                <strong>台湾楽園</strong>
+                <br />
+              </h4>
+              <p>
+                金町駅から徒歩1分
+                <br />
+              </p>
+            </div>
+            <div class="col-md-6 col-md-offset-2 col-sm-7 col-sm-offset-1">
+              <div class="footer-tel-wrap">
+                <div class="footer-tel">
+                  <span
+                    class="glyphicon glyphicon-earphone"
+                    aria-hidden="true"
+                  ></span>
+                  <a class="shop-tel-text" href="tel:070-4430-9580 ">
+                    <span title="070-4430-9580">070-4430-9580</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <ul
+                style="
+                  padding: 10px 0;
+                  margin: 20px 0 0;
+                  overflow: hidden;
+                  text-align: center;
+                "
+              >
+                <li style="display: inline-block">
+                  <a href="https://www.a-side.com/" target="_blank"
+                    ><img
+                      src="banner/a-side_1s.gif"
+                      width="88"
+                      height="31"
+                      alt="アジアンエステのエーサイド"
+                    /><br />エーサイド</a
+                  >
+                </li>
+                <li style="display: inline-block; width: 50px"></li>
+                <li style="display: inline-block">
+                  <a href="https://www.es-navi.com/" target="_blank"
+                    ><img
+                      src="banners/es-navi_88x31.gif"
+                      width="88"
+                      height="31"
+                      alt="エステナビ～全国のエステ検索の決定版！"
+                    /><br />エステナビ</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12" style="text-align: center">
+              ※当店は風俗店ではありません。
+            </div>
+
+            <div class="col-sm-12">
+              <ul class="sitemap">
+                <li>
+                  <i class="icon-angle-right icon-white"></i>
+                  <a href="index.htm">Home</a>
+                </li>
+                <li>
+                  <i class="icon-angle-right icon-white"></i>
+                  <a href="index-1.htm?list_3/">スタッフ紹介</a>
+                </li>
+                <li>
+                  <i class="icon-angle-right icon-white"></i>
+                  <a href="index-2.htm?about_7/">店内風景</a>
+                </li>
+
+                <li>
+                  <i class="icon-angle-right icon-white"></i>
+                  <a href="index-3.htm?about_6/">サービスメニュー</a>
+                </li>
+                <li>
+                  <i class="icon-angle-right icon-white"></i>
+                  <a href="index-4.htm?about_8/">アクセス</a>
+                </li>
+                <li>
+                  <i class="icon-angle-right icon-white"></i>
+                  <a href="index-5.htm?about_9/">求人情報</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="style/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="style/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="style/bootstrap.min.js"></script>
+    <script src="style/jquery.backstretch.min.js"></script>
+    <script src="style/bootstrap.offcanvas.min.js"></script>
+    <script src="style/main.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $(".carousel").carousel();
+      });
+
+      bg_img_url = false;
+      bg_option = false;
+      header_img_url = false;
+      bg_img_url = false;
+    </script>
+    <script>
+      /*获取前一天日期*/
+      function getPrevDay5(d) {
+        d = new Date(d);
+        d = +d - 1000 * 300 * 60 * 24;
+        d = new Date(d);
+        var y = d.getFullYear();
+        var m = d.getMonth() + 1;
+        var d = d.getDate();
+        if (m < 10) {
+          m = "0" + m;
+        }
+        if (d < 10) {
+          d = "0" + d;
+        }
+        return y + "-" + m + "-" + d;
+      }
+      function getPrevDay4(d) {
+        d = new Date(d);
+        d = +d - 1000 * 240 * 60 * 24;
+        d = new Date(d);
+        var y = d.getFullYear();
+        var m = d.getMonth() + 1;
+        var d = d.getDate();
+        if (m < 10) {
+          m = "0" + m;
+        }
+        if (d < 10) {
+          d = "0" + d;
+        }
+        return y + "-" + m + "-" + d;
+      }
+      function getPrevDay3(d) {
+        d = new Date(d);
+        d = +d - 1000 * 180 * 60 * 24;
+        d = new Date(d);
+        var y = d.getFullYear();
+        var m = d.getMonth() + 1;
+        var d = d.getDate();
+        if (m < 10) {
+          m = "0" + m;
+        }
+        if (d < 10) {
+          d = "0" + d;
+        }
+        return y + "-" + m + "-" + d;
+      }
+      function getPrevDay2(d) {
+        d = new Date(d);
+        d = +d - 1000 * 120 * 60 * 24;
+        d = new Date(d);
+        var y = d.getFullYear();
+        var m = d.getMonth() + 1;
+        var d = d.getDate();
+        if (m < 10) {
+          m = "0" + m;
+        }
+        if (d < 10) {
+          d = "0" + d;
+        }
+        return y + "-" + m + "-" + d;
+      }
+      function getPrevDay1(d) {
+        d = new Date(d);
+        d = +d - 1000 * 60 * 60 * 24;
+        d = new Date(d);
+        var y = d.getFullYear();
+        var m = d.getMonth() + 1;
+        var d = d.getDate();
+        if (m < 10) {
+          m = "0" + m;
+        }
+        if (d < 10) {
+          d = "0" + d;
+        }
+        return y + "-" + m + "-" + d;
+      }
+      /*获取当天日期*/
+      function getStartDay() {
+        var mydate = new Date();
+        var y = mydate.getFullYear();
+        var m = mydate.getMonth() + 1;
+        var d = mydate.getDate();
+        if (m < 10) {
+          m = "0" + m;
+        }
+        if (d < 10) {
+          d = "0" + d;
+        }
+        return y + "-" + m + "-" + d;
+      }
+      /*获取下一天日期*/
+      function getNextDay(d) {
+        d = new Date(d);
+        d = +d + 1000 * 60 * 60 * 24;
+        d = new Date(d);
+        var y = d.getFullYear();
+        var m = d.getMonth() + 1;
+        var d = d.getDate();
+        if (m < 10) {
+          m = "0" + m;
+        }
+        if (d < 10) {
+          d = "0" + d;
+        }
+        return y + "-" + m + "-" + d;
+      }
+
+      $("#time1").text(getStartDay());
+      $("#time2").text(getPrevDay1(getStartDay()));
+      $("#time3").text(getPrevDay2(getStartDay()));
+      $("#time4").text(getPrevDay3(getStartDay()));
+      $("#time5").text(getPrevDay4(getStartDay()));
+      $("#time6").text(getPrevDay5(getStartDay()));
+    </script>
+  </body>
+</html>

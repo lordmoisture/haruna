@@ -1,0 +1,657 @@
+﻿@charset "UTF-8";
+#header .logo-area .header-logo {
+  height: auto;
+}
+
+.mainvisual img {
+  height: auto;
+}
+
+/* 地図 */
+#map_canvas {
+  color: #000 !important;
+}
+
+/* bbコードで入れられた画像 */
+.bb-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* youtube ビデオ */
+.video-wrapper {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 18px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* 携帯に送信 */
+#send-mobile-msg {
+  word-break: break-all;
+}
+
+.form-horizontal select, .form-horizontal option, .form-horizontal input[type=text], .form-horizontal input[type=number], .form-horizontal input[type=tel], .form-horizontal input[type=email], .form-horizontal input[type=search], .form-horizontal input[type=url], .form-horizontal input[type=password], .form-horizontal textarea {
+  color: #000 !important;
+}
+
+/* SNS */
+.social-bookmark {
+  text-align: center;
+  padding: 2%;
+  background: rgba(255, 255, 255, 0.6);
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#99ffffff,EndColorStr=#99ffffff);
+  /*IE8以下用*/
+}
+
+.social-bookmark .social-bookmark-item {
+  float: left;
+  margin: 0 2px;
+  overflow: hidden;
+}
+
+.social-bookmark .bookmark-twitter2 {
+  width: 85px;
+}
+
+.social-bookmark:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.social-bookmark * {
+  vertical-align: baseline !important;
+}
+
+.social-media a {
+  text-decoration: none;
+  margin-right: 1%;
+  display: inline-block;
+}
+
+@font-face {
+  font-family: "Elusive-Icons";
+  src: url("/r-type/font/Elusive-Icons.eot");
+  src: url("/r-type/font/Elusive-Icons.eot?#iefix") format("embedded-opentype"), url("/r-type/font/Elusive-Icons.svg#Elusive-Icons") format("svg"), url("/r-type/font/Elusive-Icons.woff") format("woff"), url("/r-type/font/Elusive-Icons.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^=icon-]:before, [class*=" icon-"]:before {
+  font-family: "Elusive-Icons";
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  font-size: 40px;
+}
+
+.icon-facebook:before {
+  content: "";
+}
+
+.icon-googleplus:before {
+  content: "";
+}
+
+.icon-twitter:before {
+  content: "";
+}
+
+.icon-tumblr:before {
+  content: "";
+}
+
+/* ===========デザイン切り替え用セット============ */
+/* -------- frame フレーム画像 配置場所設定↓-------- */
+.main_deco_outer01, .main_deco_outer02, .main_deco_inner01, .main_deco_inner02, .deco_bottom, .deco_top, .deco_left, .deco_right {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.main_deco_outer01:before, .main_deco_outer01:after, .main_deco_outer02:before, .main_deco_outer02:after, .main_deco_inner01:before, .main_deco_inner01:after, .main_deco_inner02:before, .main_deco_inner02:after, .deco_bottom:before, .deco_bottom:after, .deco_top:before, .deco_top:after, .deco_left:before, .deco_left:after, .deco_right:before, .deco_right:after {
+  position: absolute;
+  content: "";
+  z-index: 5;
+}
+
+.main_deco_outer01:before, .main_deco_outer01:after, .main_deco_outer02:before, .main_deco_outer02:after {
+  z-index: 5;
+}
+
+.main_deco_inner01:before, .main_deco_inner01:after, .main_deco_inner02:before, .main_deco_inner02:after {
+  z-index: 6;
+}
+
+.deco_top:before {
+  /* 上 */
+  left: 0;
+  right: 0;
+  top: -5px;
+  height: 16px;
+  width: 100%;
+}
+
+.deco_bottom:after {
+  /* 下 */
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 16px;
+  width: 100%;
+}
+
+.deco_left:before {
+  /* 左 */
+  top: 0;
+  bottom: 0;
+  left: -5px;
+  width: 16px;
+  height: 100%;
+}
+
+.deco_right:after {
+  /* 右 */
+  top: 0;
+  bottom: 0;
+  right: -5px;
+  width: 16px;
+  height: 100%;
+}
+
+.main_deco_inner01:before {
+  /* 左上 */
+  left: -12px;
+  top: -12px;
+  width: 75px;
+  height: 75px;
+}
+.main_deco_inner01:after {
+  /* 右上 */
+  right: -12px;
+  top: -12px;
+  width: 75px;
+  height: 75px;
+}
+
+.main_deco_inner02:before {
+  /* 左下 */
+  left: -12px;
+  bottom: -12px;
+  width: 75px;
+  height: 75px;
+}
+.main_deco_inner02:after {
+  /* 右下 */
+  right: -12px;
+  bottom: -12px;
+  width: 75px;
+  height: 75px;
+}
+
+@media (max-width: 767px) {
+  .deco_top:before {
+    background-size: auto 10px;
+  }
+
+  .deco_left:before {
+    background-size: 10px auto;
+  }
+
+  .deco_bottom:after {
+    background-size: auto 10px;
+  }
+
+  .deco_right:after {
+    background-size: 10px auto;
+  }
+
+  .deco_top:before {
+    /* 上 */
+    top: -2px;
+    height: 10px;
+  }
+
+  .deco_bottom:after {
+    /* 下 */
+    bottom: -2px;
+    height: 10px;
+  }
+
+  .deco_left:before {
+    /* 左 */
+    left: -2px;
+    width: 10px;
+  }
+
+  .deco_right:after {
+    /* 右 */
+    right: -2px;
+    width: 10px;
+  }
+
+  .main_deco_inner01:before {
+    left: -5px;
+    top: -5px;
+    width: 37px;
+    height: 37px;
+  }
+  .main_deco_inner01:after {
+    right: -5px;
+    top: -5px;
+    width: 37px;
+    height: 37px;
+  }
+
+  .main_deco_inner02:before {
+    left: -5px;
+    bottom: -5px;
+    width: 37px;
+    height: 37px;
+  }
+  .main_deco_inner02:after {
+    right: -5px;
+    bottom: -5px;
+    width: 37px;
+    height: 37px;
+  }
+
+  #header .navbar-offcanvas {
+    padding: 0 !important;
+  }
+}
+#header .background.deco_top:before, .navbar-offcanvas.deco_top:before {
+  top: -8px;
+}
+#header .background.deco_bottom:after, .navbar-offcanvas.deco_bottom:after {
+  bottom: -10px;
+}
+
+@media (max-width: 767px) {
+  .sp-menu-collapse .mainvisual:after {
+    height: 0;
+  }
+}
+@media (max-width: 767px) {
+  #header .background.deco_top:before, .navbar-offcanvas.deco_top:before {
+    top: 0;
+  }
+
+  .navbar-offcanvas.deco_top:before {
+    top: 0 !important;
+  }
+  .navbar-offcanvas.deco_bottom:after {
+    bottom: 5px !important;
+  }
+}
+@media (min-width: 768px) {
+  .mainvisual.mainvisual_full:after {
+    height: 0px;
+  }
+
+  .header-block:before {
+    height: 0px;
+  }
+}
+/* -------- frame フレーム用背景画像の配置位置↓-------- */
+.deco_top:before {
+  /* 上 */
+  background-repeat: repeat-x;
+}
+
+.deco_bottom:after {
+  /* 下 */
+  background-repeat: repeat-x;
+}
+
+.deco_left:before {
+  /* 左 */
+  background-repeat: repeat-y;
+}
+
+.deco_right:after {
+  /* 右 */
+  background-repeat: repeat-y;
+}
+
+.main_deco_inner01:before, .main_deco_inner01:after, .main_deco_inner02:before, .main_deco_inner02:after {
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.main_deco_inner01:before {
+  /* 左上 */
+  background-position: -5px -5px;
+}
+.main_deco_inner01:after {
+  /* 右上 */
+  background-position: -90px -5px;
+}
+
+.main_deco_inner02:before {
+  /* 左下 */
+  background-position: -5px -90px;
+}
+.main_deco_inner02:after {
+  /* 右下 */
+  background-position: -90px -90px;
+}
+
+@media (max-width: 767px) {
+  .main_deco_inner01:before, .main_deco_inner01:after, .main_deco_inner02:before, .main_deco_inner02:after {
+    background-size: 85px;
+  }
+
+  .main_deco_inner01:before {
+    /* 左上 */
+    background-position: -2.5px -2.5px;
+  }
+  .main_deco_inner01:after {
+    /* 右上 */
+    background-position: -45px -2.5px;
+  }
+
+  .main_deco_inner02:before {
+    /* 左下 */
+    background-position: -2.5px -45px;
+  }
+  .main_deco_inner02:after {
+    /* 右下 */
+    background-position: -45px -45px;
+  }
+}
+/* -------- frame フレーム用背景画像のパス設定↓-------- */
+.frame_brown_01 .deco_top:before {
+  background-image: url(./frame_brown_01_top.png);
+}
+.frame_brown_01 .deco_bottom:after {
+  background-image: url(./frame_brown_01_bottom.png);
+  bottom: -5px !important;
+}
+.frame_brown_01 .deco_left:before {
+  background-image: url(./frame_brown_01_left.png);
+}
+.frame_brown_01 .deco_right:after {
+  background-image: url(./frame_brown_01_right.png);
+}
+.frame_brown_01 #header .background.deco_top:before, .frame_brown_01 .navbar-offcanvas.deco_top:before {
+  top: -4px;
+}
+
+/* --- */
+.frame_gold_01 .deco_top:before {
+  background-image: url(frame_gold_01_top.png);
+}
+.frame_gold_01 .deco_bottom:after {
+  background-image: url(frame_gold_01_bottom.png);
+}
+.frame_gold_01 .deco_left:before {
+  background-image: url(frame_gold_01_left.png);
+}
+.frame_gold_01 .deco_right:after {
+  background-image: url(frame_gold_01_right.png);
+}
+
+/* --- */
+.frame_gold_corner_01 .main_deco_inner01:before, .frame_gold_corner_01 .main_deco_inner01:after, .frame_gold_corner_01 .main_deco_inner02:before, .frame_gold_corner_01 .main_deco_inner02:after {
+  background-image: url(./change_img/frame_corner/frame_gold_corner_01.png);
+}
+
+/* --- */
+.frame_gold_02 .deco_top:before {
+  background-image: url(./frame_gold_02_top.png);
+}
+.frame_gold_02 .deco_bottom:after {
+  background-image: url(./frame_gold_02_bottom.png);
+}
+.frame_gold_02 .deco_left:before {
+  background-image: url(./frame_gold_02_left.png);
+}
+.frame_gold_02 .deco_right:after {
+  background-image: url(./frame_gold_02_right.png);
+}
+
+/* --- */
+.frame_gold_corner_02 .main_deco_inner01:before, .frame_gold_corner_02 .main_deco_inner01:after, .frame_gold_corner_02 .main_deco_inner02:before, .frame_gold_corner_02 .main_deco_inner02:after {
+  background-image: url(./change_img/frame_corner/frame_gold_corner_02.png);
+}
+
+/* --- */
+.frame_gold_03 .deco_top:before {
+  background-image: url(./frame_gold_03_top.png);
+}
+.frame_gold_03 .deco_bottom:after {
+  background-image: url(./frame_gold_03_bottom.png);
+  bottom: -5px !important;
+}
+.frame_gold_03 .deco_left:before {
+  background-image: url(./frame_gold_03_left.png);
+}
+.frame_gold_03 .deco_right:after {
+  background-image: url(./frame_gold_03_right.png);
+}
+.frame_gold_03 #header .background.deco_top:before, .frame_gold_03 .navbar-offcanvas.deco_top:before {
+  top: -4px;
+}
+
+/* --- */
+.frame_gold_corner_03 .main_deco_inner01:before, .frame_gold_corner_03 .main_deco_inner01:after, .frame_gold_corner_03 .main_deco_inner02:before, .frame_gold_corner_03 .main_deco_inner02:after {
+  background-image: url(./change_img/frame_corner/frame_gold_corner_03.png);
+}
+
+/* --- */
+.frame_silver_01 .deco_top:before {
+  background-image: url(./frame_silver_01_top.png);
+}
+.frame_silver_01 .deco_bottom:after {
+  background-image: url(./frame_silver_01_bottom.png);
+}
+.frame_silver_01 .deco_left:before {
+  background-image: url(./frame_silver_01_left.png);
+}
+.frame_silver_01 .deco_right:after {
+  background-image: url(./frame_silver_01_right.png);
+}
+
+.frame_silver_corner_01 .main_deco_inner01:before, .frame_silver_corner_01 .main_deco_inner01:after, .frame_silver_corner_01 .main_deco_inner02:before, .frame_silver_corner_01 .main_deco_inner02:after {
+  background-image: url(./change_img/frame_corner/frame_silver_corner_01.png);
+}
+
+/* --- */
+.frame_silver_02 .deco_top:before {
+  background-image: url(./frame_silver_02_top.png);
+}
+.frame_silver_02 .deco_bottom:after {
+  background-image: url(./frame_silver_02_bottom.png);
+}
+.frame_silver_02 .deco_left:before {
+  background-image: url(./frame_silver_02_left.png);
+}
+.frame_silver_02 .deco_right:after {
+  background-image: url(./frame_silver_02_right.png);
+}
+
+.frame_silver_corner_02 .main_deco_inner01:before, .frame_silver_corner_02 .main_deco_inner01:after, .frame_silver_corner_02 .main_deco_inner02:before, .frame_silver_corner_02 .main_deco_inner02:after {
+  background-image: url(./change_img/frame_corner/frame_silver_corner_02.png);
+}
+
+/* --- */
+.frame_flower_01 .deco_top:before {
+  background-image: url(./frame_flower_01_top.png);
+}
+.frame_flower_01 .deco_bottom:after {
+  background-image: url(./frame_flower_01_bottom.png);
+}
+.frame_flower_01 .deco_left:before {
+  background-image: url(./frame_flower_01_left.png);
+}
+.frame_flower_01 .deco_right:after {
+  background-image: url(./frame_flower_01_right.png);
+}
+
+.frame_flower_corner_01 .main_deco_inner01:before, .frame_flower_corner_01 .main_deco_inner01:after, .frame_flower_corner_01 .main_deco_inner02:before, .frame_flower_corner_01 .main_deco_inner02:after {
+  background-image: url(./change_img/frame_corner/frame_flower_corner_01.png);
+}
+
+/* --- */
+.frame_flower_02 .deco_top:before {
+  background-image: url(./frame_flower_02_top.png);
+}
+.frame_flower_02 .deco_bottom:after {
+  background-image: url(./frame_flower_02_bottom.png);
+}
+.frame_flower_02 .deco_left:before {
+  background-image: url(./frame_flower_02_left.png);
+}
+.frame_flower_02 .deco_right:after {
+  background-image: url(./frame_flower_02_right.png);
+}
+
+.frame_flower_corner_02 .main_deco_inner01:before, .frame_flower_corner_02 .main_deco_inner01:after, .frame_flower_corner_02 .main_deco_inner02:before, .frame_flower_corner_02 .main_deco_inner02:after {
+  background-image: url(./change_img/frame_corner/frame_flower_corner_02.png);
+}
+
+/* --- */
+.frame_flower_corner_03 .main_deco_inner01:before, .frame_flower_corner_03 .main_deco_inner01:after, .frame_flower_corner_03 .main_deco_inner02:before, .frame_flower_corner_03 .main_deco_inner02:after {
+  background-image: url(./change_img/frame_corner/frame_flower_corner_03.png);
+}
+
+/* --- */
+.frame_race_01 .deco_top:before {
+  background-image: url(./frame_race_01_top.png);
+}
+.frame_race_01 .deco_bottom:after {
+  background-image: url(./frame_race_01_bottom.png);
+}
+.frame_race_01 .deco_left:before {
+  background-image: url(./frame_race_01_left.png);
+}
+.frame_race_01 .deco_right:after {
+  background-image: url(./frame_race_01_right.png);
+}
+
+.frame_race_corner_01 .main_deco_inner01:before, .frame_race_corner_01 .main_deco_inner01:after, .frame_race_corner_01 .main_deco_inner02:before, .frame_race_corner_01 .main_deco_inner02:after {
+  background-image: url(./change_img/frame_corner/frame_race_corner_01.png);
+}
+
+/* --- */
+.frame_race_02 .deco_top:before {
+  background-image: url(./frame_race_02_top.png);
+}
+.frame_race_02 .deco_bottom:after {
+  background-image: url(./frame_race_02_bottom.png);
+}
+.frame_race_02 .deco_left:before {
+  background-image: url(./frame_race_02_left.png);
+}
+.frame_race_02 .deco_right:after {
+  background-image: url(./frame_race_02_right.png);
+}
+
+/* --- */
+.frame_race_03 .deco_top:before {
+  background-image: url(./frame_race_03_top.png);
+}
+.frame_race_03 .deco_bottom:after {
+  background-image: url(./frame_race_03_bottom.png);
+}
+.frame_race_03 .deco_left:before {
+  background-image: url(./frame_race_03_left.png);
+}
+.frame_race_03 .deco_right:after {
+  background-image: url(./frame_race_03_right.png);
+}
+
+.frame_race_corner_03 .main_deco_inner01:before, .frame_race_corner_03 .main_deco_inner01:after, .frame_race_corner_03 .main_deco_inner02:before, .frame_race_corner_03 .main_deco_inner02:after {
+  background-image: url(./change_img/frame_corner/frame_race_corner_03.png);
+}
+
+/* --- */
+.frame_jewel_01 .deco_top:before {
+  background-image: url(./frame_jewel_01_top.png);
+}
+.frame_jewel_01 .deco_bottom:after {
+  background-image: url(./frame_jewel_01_bottom.png);
+}
+.frame_jewel_01 .deco_left:before {
+  background-image: url(./frame_jewel_01_left.png);
+}
+.frame_jewel_01 .deco_right:after {
+  background-image: url(./frame_jewel_01_right.png);
+}
+.frame_jewel_01 #header .background.deco_top:before, .frame_jewel_01 .navbar-offcanvas.deco_top:before {
+  top: -6px;
+}
+
+.frame_jewel_corner_01 .main_deco_inner01:before, .frame_jewel_corner_01 .main_deco_inner01:after, .frame_jewel_corner_01 .main_deco_inner02:before, .frame_jewel_corner_01 .main_deco_inner02:after {
+  background-image: url(./change_img/frame_corner/frame_jewel_corner_01.png);
+}
+
+/* --- */
+.frame_jewel_02 .deco_top:before {
+  background-image: url(./frame_jewel_02_top.png);
+}
+.frame_jewel_02 .deco_bottom:after {
+  background-image: url(./frame_jewel_02_bottom.png);
+}
+.frame_jewel_02 .deco_left:before {
+  background-image: url(./frame_jewel_02_left.png);
+}
+.frame_jewel_02 .deco_right:after {
+  background-image: url(./frame_jewel_02_right.png);
+}
+.frame_jewel_02 #header .background.deco_top:before, .frame_jewel_02 .navbar-offcanvas.deco_top:before {
+  top: -6px;
+}
+
+.frame_jewel_corner_02 .main_deco_inner01:before, .frame_jewel_corner_02 .main_deco_inner01:after, .frame_jewel_corner_02 .main_deco_inner02:before, .frame_jewel_corner_02 .main_deco_inner02:after {
+  background-image: url(./change_img/frame_corner/frame_jewel_corner_02.png);
+}
+
+/* --- */
+.frame_z_norborder .deco_top:before {
+  background-image: none;
+  content: none;
+}
+.frame_z_norborder .deco_bottom:after {
+  background-image: none;
+  content: none;
+}
+.frame_z_norborder .deco_left:before {
+  background-image: none;
+  content: none;
+}
+.frame_z_norborder .deco_right:after {
+  background-image: none;
+  content: none;
+}
+
+.frame_z_nocorner .main_deco_inner01:before, .frame_z_nocorner .main_deco_inner01:after, .frame_z_nocorner .main_deco_inner02:before, .frame_z_nocorner .main_deco_inner02:after {
+  background-image: none;
+  content: none;
+}
+
+/* --- */
